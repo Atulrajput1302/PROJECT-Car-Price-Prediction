@@ -1,0 +1,369 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: consolas;
+  box-sizing: border-box;
+}
+
+
+body
+{
+  display: flex;
+  justify-content:flex-start;
+  /*align-items : controls the position of the row/column */
+  align-items:baseline;
+  min-height: 150vh;
+
+  /* flex-direction ---> Controls the alingment */
+  flex-direction:row-reverse;
+  background: #050801;
+  font-family: 'Pangolin', cursive;
+}
+
+
+a
+{
+  position:relative;
+  display:inline-block;
+  padding: 10px 10px;
+  margin: 20px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 2px;
+}
+
+
+/* controls the neon % colour appearing on HOVER */
+a:hover
+{
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+}
+
+
+
+/* CHANGING THE NEON COLOURS */
+
+
+a:nth-child(1)
+{
+  filter: hue-rotate(290deg);
+}
+
+
+a:nth-child(2)
+{
+  filter: hue-rotate(240deg);
+}
+
+a:nth-child(3)
+{
+  filter: hue-rotate(130deg);
+}
+
+
+a:nth-child(4)
+{
+  filter: hue-rotate(50deg);
+}
+
+a:nth-child(5)
+{
+  filter: hue-rotate(190deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box{
+  width:800px;
+  padding: 40px;
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: black;
+  text-align:center;
+}
+
+
+#head_text{
+  font-family: 'Pangolin', cursive;
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight:
+}
+
+
+
+
+
+/* email & password box design */
+.box input[type = "text"]
+{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 20px;
+  width: 300px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+
+}
+
+
+
+
+/* auto adjustment of box size using :         focus */
+.box input[type = "text"]:focus
+{
+  width : 400px;
+  border-color: #2ecc71;
+}
+
+
+
+
+/* for submit button */
+.box input[type = "submit"]
+{
+  position:fixed;
+  bottom: : 50%;
+  left: 39%;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 30px;
+  outline: none;
+  color: white;
+  font-size: 32px;
+  font-weight: bolder;
+  font-family: 'Pangolin', cursive;
+  /* border-radius: 24px; */
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+/* for submit button on hovering */
+.box input[type = "submit"]:hover
+{
+  background:  #2ecc61;
+}
+
+
+
+
+
+.alpha{
+  position: absolute;
+  top: 1%;
+  left: 2%;
+}
+
+
+
+/* headings */
+
+.heading{
+  font-size: 22px;
+  font-family: 'Pangolin', cursive;
+  color: white;
+}
+
+
+
+
+
+
+
+/* select tag customization */
+
+.select-class {
+  position: absolute;
+  top: 75%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+
+.select-class select {
+  background-color: #FFFC00 ;
+  color: black;
+  padding: 7px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Pangolin', cursive;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.select-class::before {
+/* using content we can have the arrow icon */
+  content: "\25bc";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 45%;
+  left: 82%;
+  right: 0;
+  width: 22%;
+  height: 0%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.select-class:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select-class select option {
+  padding: 30px;
+}
+
+
+
+
+/* second */
+
+.select-class1 {
+  position: absolute;
+  top: 75%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+
+.select-class1 select {
+  background-color:   #9AFE2E   ;
+  color: black;
+  padding: 7px;
+  width: 200px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Pangolin', cursive;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.select-class1::before {
+/* using content we can have the arrow icon */
+  content: "\25bc";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+  right: 0;
+  width: 22%;
+  height: 0%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.select-class1:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select-class1 select option {
+  padding: 30px;
+}
+
+
+
+
+
+/* third */
+
+/* select tag customization */
+
+.select-class2 {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select-class2 select {
+  background-color: #FFFC00 ;
+  color: black;
+  padding: 7px;
+  width: 280px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Pangolin', cursive;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.select-class2::before {
+/* using content we can have the arrow icon */
+  content: "\25bc";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 45%;
+  left: 82%;
+  right: 0;
+  width: 22%;
+  height: 0%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.select-class2:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.select-class2 select option {
+  padding: 30px;
+}
